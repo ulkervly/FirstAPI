@@ -56,6 +56,8 @@ namespace BookStoreAPI.Controllers
 
             book.CreatedDate = DateTime.UtcNow.AddHours(4);
             book.UpdatedDate = DateTime.UtcNow.AddHours(4);
+            book.CatagoryId = dto.CatagoryId;
+
             book.IsDeleted = false;
             _context.Books.Add(book);
             _context.SaveChanges();

@@ -3,5 +3,6 @@
     public class CatagoryCreateDto
     {
         public string Name { get; set; }
+        
     }
 }
